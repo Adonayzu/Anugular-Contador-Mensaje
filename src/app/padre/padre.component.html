@@ -1,10 +1,19 @@
-<app-hijo 
+<!-- la directiva es el appEstiloHermano -->
+<h1 >{{nombre }}</h1>
+<h2> Fecha de hoy : {{fecha | date: 'dd/MM/yyyy'}}</h2><!--  esto es para que aparezca la fecha -->
+<h2> Cuanto cotiza el dolar : {{dolar | currency}}</h2> <!-- aparezca el dolar -->
+<h2> El numero PI: {{pi | number:'1.2-2'}}</h2> <!-- aparezca eñ numerp pi -->
+<h2> El porcentaje es : {{factor | percent}}</h2> <!-- aqui el porcentaje -->
+<button type="button" (click)="saludar()"> saludar/button>
+<button type="button" (click)="preguntar()"> Preguntar por Hijo </button>
+
+<!-- <app-hijo 
 (incrementarDesdeHijo) = "incrementar()"
 (decrementarDesdeHijo) = "decrementar()"
 (mensajeDesdeHijo)="recibirMensaje($event)"
 ></app-hijo>
 <br>
-<br>
+<br>  
 <br>
 <br>
 <h1>El mensaje recibido desde el hijo es: {{mensajeRecibido}}</h1>>
@@ -12,5 +21,5 @@
 
     <h1>Contador: </h1>
 <p>{{valorContador}}</p>
-
+ -->
 
